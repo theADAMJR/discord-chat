@@ -32,6 +32,4 @@ io.on('connection', (clientSocket) => {
 function deleteMessage(index) {
   const oldMessage = messages[index];
   messages.splice(index, 1);
-
-  io.sockets.emit('message-delete', oldMessage);
 }

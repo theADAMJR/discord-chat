@@ -25,7 +25,6 @@ message.addEventListener('keypress', () => {
 
 // listen for events
 socket.on('chat', (data) => appendMessage(data));
-socket.on('message-delete', (data) => deleteMessage(data));
 
 socket.on('typing', (data) => {
   feedback.innerHTML = `<p><em>${data} is typing a message...</em></p>`;
@@ -43,10 +42,6 @@ fetch('/messages')
 
 function appendMessage(data) {
   output.innerHTML += extremelyLongMessagePreview(data);
-}
-
-function deleteMessage(data) {
-  document.querySelector(`#message-${data.id}`).innerHTML = '';
 }
 
 // special discord theme code
