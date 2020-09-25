@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WS Chat</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/discord-theme@1.1.8/css/main.min.css" defer>
+
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/message.css">
+</head>
+<body>
+  <div id="chat">
+    <div id="chat-window">
+      <div id="output"></div>
+    </div>
+    <div id="feedback"></div>
+    <input id="username" class="dinput" type="text" placeholder="Username">
+    <input id="message" class="dinput" type="text" placeholder="Message">
+    <button id="send">Send</button>
+  </div>
+
+  <p id="footer">
+    Discord themed websocket chat. Messages are deleted after 5 minutes.
+    <a href="https://github.com/theADAMJR/discord-chat">GitHub</a>
+  </p>
+
+  <script src="/chat.js" type="module" defer></script>
+</body>
+</html>
