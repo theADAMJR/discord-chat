@@ -78,3 +78,7 @@ button{
   color: white;
   text-align: center;
 }
+
+a {
+  color: #7289DA !important;
+}

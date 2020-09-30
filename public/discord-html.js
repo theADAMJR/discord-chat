@@ -26,13 +26,14 @@ function getMessage(data) {
             <span class="highlight-separator"> - </span>
             <span class="timestamp">${toTimestamp(new Date(data.createdAt))}</span>
         </h2>
-        <div innerHtml="processed" class="message-text">${data.message}</div>
+        <div innerHtml="processed" class="message-text">${data.html}</div>
     </div>
     ${(data.embed)
       ? `<div class="embed">
-        <div class="title">${data.embed.title}</div>
+        <a class="title" href="${data.url}">${data.embed.title}</a>
         <div class="description">${data.embed.description}</div>
-        ${data.embed.image ? `<img src="${data.embed.image}" onerror="this.onerror=null;this.hidden = true">` : ''}
+        ${data.embed.image && !data.embed.video ?
+          `<img src="${data.embed.image}" onerror="this.onerror=null;this.hidden = true">` : ''}
       </div>`
       : ``}`;
 }

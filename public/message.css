@@ -285,7 +285,13 @@
 .embed .description {
 	padding-bottom: 5px;	
 }
-.embed img {
+.embed img, .embed video {
 	max-width: 450px;
 	border-radius: 5px;
+
+	outline: none !important;
+}
+.embed a {
+	color: #7289da;
+	text-decoration: none;
 }

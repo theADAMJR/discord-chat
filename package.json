@@ -12,8 +12,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "discord-markdown": "^2.4.1",
     "express": "^4.17.1",
-    "kahaki": "0.0.6",
+    "got": "^11.7.0",
+    "markdown-to-text-emoji": "^1.1.0",
+    "metascraper": "^5.14.14",
+    "metascraper-description": "^5.14.14",
+    "metascraper-image": "^5.14.14",
+    "metascraper-title": "^5.14.14",
+    "metascraper-url": "^5.14.14",
+    "metascraper-youtube": "^5.14.14",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
