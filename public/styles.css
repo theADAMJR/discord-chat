@@ -37,10 +37,6 @@ h2{
   margin: 0 20px;
 }
 
-#output strong{
-  color: #7289DA;
-}
-
 label{
   box-sizing: border-box;
   display: block;
