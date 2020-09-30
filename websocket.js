@@ -11,7 +11,6 @@ const metascraper = require('metascraper')([
   require('metascraper-url')()
 ]);
 
-
 const io = socket(server);
 
 io.on('connection', (clientSocket) => {
