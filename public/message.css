@@ -268,3 +268,24 @@
 .user-name {
 	padding-bottom: 5px
 }
+
+/* embed */
+.embed {
+	border-radius: 5px;
+	background-color: rgba(46,48,54,.3);
+	border-left: 5px solid gray;
+
+	margin-top: 5px;
+	padding: 10px;
+}
+.embed .title {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.embed .description {
+	padding-bottom: 5px;	
+}
+.embed img {
+	max-width: 450px;
+	border-radius: 5px;
+}
